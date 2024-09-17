@@ -1,28 +1,29 @@
-Sending u, a trial task for the AI engineer position, let's aim to have it done by early next week. Hopefully by Monday 12:00 PST the latest.
+# Interview Task
 
-FutureAI Interview Task:
-Objective:
-Evaluate clustering, embeddings, and general model training knowledge on text data.
+This project provides a set of tools for embedding text data using various methods (TF-IDF, GloVe, BERT) and visualizing the clusters using t-SNE.
 
-Steps:
-1. Data Preparation:
-Use the Kaggle email spam classification dataset.
-2. Preprocess the dataset:
-Clean and tokenize the text.
-Convert the most common words for each email into embeddings using any standard method
-3. Clustering Task:
-Perform a clustering task on the email text data using the word embeddings
-Explain the choice of clustering algorithm and how the number of clusters was determined.
-4. Classification Task:
-Build a classification model to differentiate between spam and regular emails using the embeddings or other extracted features.
-5. Insights:
-Identify the top common words that appear in both spam and regular emails. Discuss any insights derived from these words in relation to the model's performance.
-6. Deliverables:
-Jupyter notebook or Python scripts with code and explanations.
-7. Bonus Points:
-- Analyze the clusters: For example, identify patterns or themes within the clusters.
-- A short write-up summarizing the approach, choices made, and insights gained.
-- Evaluate the performance of the classification model using standard metrics (accuracy, precision, recall, F1-score).
+## Installation
 
-Time Expectation:
-This task should take approximately 5-7 hours. (edited)
+
+1. **Create a virtual environment and activate it**:
+    ```sh
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    ```
+
+2. **Install the required dependencies**:
+    ```sh
+    poetry install
+    ```
+
+## Usage
+
+1. **Run JupyterLab**:
+    ```sh
+    poetry run jupyter lab
+    ```
+
+2. **Open the notebook file**:
+    - Navigate to the notebook file (e.g., `main.ipynb`) in JupyterLab and open it.
+
+3. **Follow the instructions in the notebook** to run the code cells and perform text data embedding and clustering.
